@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web application</title>
+    <style>
+
+     
+    body{
+
+    background-color: rgb(118, 191, 255);
+
+    }
+
+
+
+      .container{
+
+        margin: 0 auto;
+        background-color: red;
+        width: 30%;
+        margin-top: 50px;
+        border-radius: 10px;
+        box-shadow: 10px 5px 5px rgb(97, 94, 94);
+       
+      }
+      #value{
+ 
+         margin: 0 auto;
+      }
+      h1{
+
+         font-family: sans-serif;
+         background-color: rgb(255, 255, 255);
+         width: 30%;
+         margin: 0 auto;
+        margin-top: 20px;
+         
+      }
+      button{
+
+        padding: 6px 30px;
+        background-color: rgb(250, 184, 61);
+        position: relative;
+        left: 140px;
+
+      }
+      #one,#two{
+       
+        margin: 20px 10px;
+        padding: 10px 20px;
+        position: relative;
+        left: 80px;
+
+
+      }
+      #output{
+  
+         margin: 15px 30px;
+         padding: 5px 10px;
+         position: relative;
+        left: 65px;
+
+      }
+      p{
+ 
+         font-size: 20px;
+         color:white;
+         font-family: sans-serif;
+
+      }
+
+
+    </style>
+    
+</head>
+<body>
+
+ 
+
+    
+  
+         <h1 style="color:red; text-align: center;" id="head">Welcome</h1>
+        
+
+         <div class="container">
+
+            <input id="one" placeholder="First Number"><br>
+            <input id="two" placeholder="Second number"><br>
+           
+             <button onclick="change()">Click</button><br>
+             
+   
+             <input id="output">
+
+
+   
+
+
+         </div>
+        
+         <button onclick="create()">Create</button>
+    
+    <script>
+
+      
+
+       change = () =>{
+ 
+          var a=Number(document.getElementById('one').value);
+          var b=Number(document.getElementById('two').value);
+     
+           document.getElementById('output').value=a+b;
+          
+           
+           
+     
+       }
+
+         create = () =>{
+
+
+            var para = document.createElement("P");               // Create a <p> element
+para.innerText = "This is a paragraph";               // Insert text
+document.body.appendChild(para); 
+
+
+         }
+     
+     
+       
+        
+
+
+     </script>
+
+</body>
+</html>
